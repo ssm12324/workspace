@@ -14,4 +14,5 @@ a = input("password?: ")
 passwords = ["Password123!", "weakpass", "NOLOWERCASE123!", "NoSpecial1", "Strong@Pass1","qQ1!"]
 passwords.append(a)
 for pw in passwords:
+    print("1")
     print(f"{pw}: {validate_password(pw)}")
