@@ -7,5 +7,5 @@ while True:  # 무한 루프 시작
         print("프로그램을 종료합니다. 안녕히 가세요!")
         break  # 반복문 종료
     else:
-        print("1")
+        print("12")
         print("입력한 문장:", user_input)  # 입력한 문장 출력
