@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: sk012-ui
-        image: amdp-registry.skala-ai.com/skala25a/sk012-ui:1.0.kaniko-docker-36-dad6624768ef
+        image: amdp-registry.skala-ai.com/skala25a/sk012-ui:1.0.kaniko-docker-37-14fb9b11f2b6
         ports:
         - containerPort: 80
