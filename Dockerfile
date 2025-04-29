@@ -9,7 +9,7 @@ EXPOSE 8080
 EXPOSE 8081
 
 # 실제 존재하는 JAR 파일로 경로 변경!
-ADD target/sk012-my-second-app-1.0.0.jar app.jar
+ADD target/sk012-my-app-1.0.0.jar app.jar
 
 # 실행
 ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles.active=prod", "-jar", "app.jar"]
