@@ -1,15 +1,8 @@
-# 베이스 이미지
-FROM openjdk:17-jdk-slim
+# 가볍고 빠른 nginx 공식 이미지
+FROM nginx:alpine
 
-# 작업 디렉토리 설정
-WORKDIR /app
+# index.html 파일을 nginx 웹 루트로 복사
+COPY index.html /usr/share/nginx/html/index.html
 
-# 포트 설정
-EXPOSE 8080
-EXPOSE 8081
-
-# 실제 존재하는 JAR 파일로 경로 변경!
-ADD target/sk012-my-app-1.0.0.jar app.jar
-
-# 실행
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dspring.profiles.active=prod", "-jar", "app.jar"]
+# 80 포트 열어주기
+EXPOSE 80
